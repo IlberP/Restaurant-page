@@ -18,7 +18,7 @@ function addEvents(){
 }
 
 function init(){
-    loadHome()
     load()
+    loadHome()
     addEvents()
 }

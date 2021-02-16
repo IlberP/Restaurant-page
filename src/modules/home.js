@@ -27,14 +27,14 @@ function setActiveBtn(id) {
 
 function loadHome(){
     const content = document.getElementById('tab-info');
-    // content.classList.add('flex-lay');
+    content.classList.add('grid-lay');
 
-    //content.textContent = '';
+    content.textContent = '';
     const aboutSect = createAbout();
 
     //setActiveBtn('home');
     
-    //content.appendChild(aboutSect)
+    content.appendChild(aboutSect)
 }
 
 export default loadHome;
