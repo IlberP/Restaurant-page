@@ -23,8 +23,8 @@ function makeNav(id){
     const homeTab = makeBtn('home', 'home');
     nav.appendChild(homeTab);
 
-    const aboutTab = makeBtn('about', 'about');
-    nav.appendChild(aboutTab);
+    const menuTab = makeBtn('menu', 'menu');
+    nav.appendChild(menuTab);
 
     const contactTab = makeBtn('contact', 'contact');
     nav.appendChild(contactTab);

@@ -23,7 +23,7 @@ function foodItems(src, text, price, alt){
 }
 
 function menu(){
-    const content = document.getElementById('content');
+    const content = document.getElementById('tab-info');
     content.classList.add('grid-lay');
 
     content.textContent = ''

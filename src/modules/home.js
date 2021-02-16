@@ -8,10 +8,10 @@ function createAbout(){
 
     about.appendChild(title);
 
-    const p = document.createElement('p');
-    p.classList.add('section-description');
-    p.textContent = 'Serving the finest ramen in all of Konoha. Come eat at the Hokages favorite spot!'
-    about.appendChild(p);
+    const para = document.createElement('p');
+    para.classList.add('section-description');
+    para.textContent = 'Serving the finest ramen in all of Konoha. Come eat at the Hokages favorite spot!'
+    about.appendChild(para);
 
     return about;
 }
@@ -21,20 +21,20 @@ function setActiveBtn(id) {
     if (activeBtn) activeBtn.classList.remove('active')
 
     const homeBtn = document.getElementById('id');
-    homeBtn.classList.add('active')
+    // homeBtn.classList.add('active')
 }
 
 
 function loadHome(){
     const content = document.getElementById('tab-info');
-    content.classList.add('flex-lay');
+    // content.classList.add('flex-lay');
 
-    content.textContent = ''
+    //content.textContent = '';
     const aboutSect = createAbout();
 
-    setActiveBtn('home');
+    //setActiveBtn('home');
     
-    content.appendChild(aboutSect)
+    //content.appendChild(aboutSect)
 }
 
 export default loadHome;
