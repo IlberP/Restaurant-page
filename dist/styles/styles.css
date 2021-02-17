@@ -1,0 +1,157 @@
+body{
+    background-color: #1f1f1f;
+    border-color: black;
+    border-style: solid;
+}
+
+#content{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#header{
+    display: flex;
+    flex-direction: grid;
+    align-content: center;
+    color: orange;
+    background-color: black;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#h1{
+    display: flex;
+    align-content: center;
+    /* background-image: url('/dist/styles/img/leafbg.jpg'); */
+}
+
+#h2{
+    display: flex;
+    text-align: center;
+}
+
+#tab-info{
+    display: flex;
+    justify-content: center;
+    border-width: 2px;
+    border-style: ridge;
+    border-color: orange;
+    background-color: orange;
+    padding: 40px;
+    
+}
+
+.section-title{
+    display: flex;
+    justify-content: center;
+}
+
+#home{
+    color: black;
+
+}
+
+.food{
+    /* display: flex;
+    flex-direction: column; */
+    overflow: hidden;
+    transition: 0.4s;
+    animation: appear 1s ease-in-out;
+}
+
+.food img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.food .description{
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+    
+}
+
+.food:hover .description{
+    transform: translateY(100%);
+}
+
+
+
+.flex-lay {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .grid-lay {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  #footer{
+      display: flex;
+      justify-content: center;
+      bottom: 0px;
+      /* margin-left: 200px; */
+      background-color: olive
+  }
+
+  .tab {
+    outline: none;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border: 0;
+    
+    border-top: 4px solid #f2a30b;
+    border-bottom: 4px solid #f2a30b ;
+    box-shadow: inset 0px 0 7px 30px rgb(37, 16, 41);
+    background-color: #f2a30b;
+    transition-duration: 0.5s;
+  }
+  .tab:hover,
+  .tab:focus {
+    background-color: rgb(26, 112, 194);
+  }
+  
+  .tab:hover span,
+  .tab:focus span {
+    color: #fbe407 !important;
+    text-shadow: 0px 0px 12px rgba(41, 41, 41, 0.4);
+    font-size: 32px;
+  }
+  
+  .tab span {
+    color: #fff !important;
+    font-size: 28px;
+    letter-spacing: 0.2rem;
+    text-shadow: 2px 10px 15px rgb(0, 0, 0);
+    transition: 0.1s;
+  }
+
+  .active span {
+    color: #fbe407; 
+    text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.4) !important;
+    font-size: 32px;
+  }
+
+  .active:hover span,
+  .active:focus span {
+      /* color: #0c2fdf ; */
+      font-size: 34px;
+
+  }

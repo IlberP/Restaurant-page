@@ -1,8 +1,14 @@
 //load imports here for the home, menu and contact
 
-function makeHeader(id, text) {
+function makeHeader(id, text, src) {
     const header = document.createElement('header');
     header.setAttribute('id', id);
+    const logo = document.createElement('h1');
+    logo.textContent = text
+    const img = document.createElement('img');
+    img.setAttribute('src', src)
+    header.appendChild(img)
+    header.appendChild(logo);
     return header
 }
 
@@ -49,7 +55,7 @@ function makeFooter(id, text){
 
 function load(){
     const content = document.getElementById('content');
-    const header = makeHeader('header', 'Ichiraku Ramen');
+    const header = makeHeader('header', 'Ichiraku Ramen', '/dist/styles/img/leaf.png');
     content.appendChild(header)
 
     const nav = makeNav('nav');

@@ -22,6 +22,14 @@ function foodItems(src, text, price, alt){
     return food
 }
 
+function setActiveBtn(id){
+    const activeBtn = document.querySelector('.tab-active');
+    if (activeBtn) activeBtn.classList.remove('active');
+
+    const homeBtn = document.getElementById(id);
+    homeBtn.classList.add('active')
+}
+
 function menu(){
     const content = document.getElementById('tab-info');
     content.classList.add('grid-lay');
@@ -30,22 +38,30 @@ function menu(){
 
     const items = [
         foodItems(
-            'tonkotsu.png',
-            'Tonkotsu ramen',
-            '$8.99',
-            'Tonkotsu ramen'
+            '/dist/styles/img/tonkotsu.png',
+            'Tonkotsu Ramen',
+            '$6.99',
+            'Tonkotsu Ramen'
         ),
         foodItems(
-            'instantramen.png',
+            '/dist/styles/img/instantramen.png',
             'Instant Ramen',
             '$2.99',
             'Instant ramen'
+        ),
+        foodItems(
+            '/dist/styles/img/shoyu.png',
+            'Shoyu Ramen',
+            '6.99',
+            'Shoyu Ramen'
         )
     ];
 
     items.forEach((food)=> {
         content.appendChild(food)
     })
+
+    setActiveBtn('menu')
 }
 
 export default menu

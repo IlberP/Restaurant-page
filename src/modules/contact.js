@@ -17,6 +17,14 @@ function makeContact(name, data){
     return section
 }
 
+function setActiveBtn(id){
+    const activeBtn = document.querySelector('.tab-active');
+    if (activeBtn) activeBtn.classList.remove('active');
+
+    const homeBtn = document.getElementById(id);
+    homeBtn.classList.add('active')
+}
+
 function contact(){
     const content = document.getElementById('tab-info');
     content.classList.add('flex-lay');
@@ -28,8 +36,10 @@ function contact(){
     ]);
     content.appendChild(phone)
 
-    const address = makeContact('address', ['Japan'])
+    const address = makeContact('address', ['Konoha'])
     content.appendChild(address)
+
+    setActiveBtn('contact')
 }
 
 export default contact;
