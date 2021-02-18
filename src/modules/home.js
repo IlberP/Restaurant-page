@@ -1,3 +1,4 @@
+//creates the abpit section for the home page
 function createAbout(){
     const about = document.createElement('section');
     about.classList.add('section');
@@ -16,6 +17,7 @@ function createAbout(){
     return about;
 }
 
+//sets the active buttin to be highlighted when active on this page
 function setActiveBtn(id) {
     const activeBtn = document.querySelector('.activeTab');
     if (activeBtn) activeBtn.classList.remove('active')
@@ -25,7 +27,7 @@ function setActiveBtn(id) {
     // homeBtn.classList.add('active')
 }
 
-
+//function for the module to be exported into the main page
 function loadHome(){
     const content = document.getElementById('tab-info');
     content.classList.add('flex-lay');

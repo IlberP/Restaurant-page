@@ -1,3 +1,4 @@
+//creates the food list dom
 function foodItems(src, text, price, alt){
     const food = document.createElement('div');
     food.classList.add('food');
@@ -22,6 +23,7 @@ function foodItems(src, text, price, alt){
     return food
 }
 
+//sets the active tab if this page is active
 function setActiveBtn(id){
     const activeBtn = document.querySelector('.tab-active');
     if (activeBtn) activeBtn.classList.remove('active');
@@ -30,6 +32,8 @@ function setActiveBtn(id){
     homeBtn.classList.add('active')
 }
 
+
+//creates the menu items into a list from the function and exports this into the main page
 function menu(){
     const content = document.getElementById('tab-info');
     content.classList.add('grid-lay');

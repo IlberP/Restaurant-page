@@ -1,3 +1,4 @@
+//creates the dom manipulation for the contact page
 function makeContact(name, data){
     const section = document.createElement('section');
     section.classList.add('contact');
@@ -17,6 +18,7 @@ function makeContact(name, data){
     return section
 }
 
+//sets the active button if this is the active page
 function setActiveBtn(id){
     const activeBtn = document.querySelector('.tab-active');
     if (activeBtn) activeBtn.classList.remove('active');
@@ -25,6 +27,7 @@ function setActiveBtn(id){
     homeBtn.classList.add('active')
 }
 
+//creates the contact info to be exported into the main page
 function contact(){
     const content = document.getElementById('tab-info');
     content.classList.add('flex-lay');

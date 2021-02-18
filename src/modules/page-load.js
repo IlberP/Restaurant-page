@@ -1,4 +1,4 @@
-//load imports here for the home, menu and contact
+//creates the dom and adds it to the html to be loaded
 
 function makeHeader(id, text, src) {
     const header = document.createElement('header');

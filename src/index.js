@@ -1,3 +1,4 @@
+//imports all the modules into the home page and adds event listeners to the the navigations 
 import load from './modules/page-load';
 import loadHome from './modules/home';
 import menu from './modules/menu';
@@ -16,6 +17,8 @@ function addEvents(){
     contactBtn.addEventListener('click', contact)
 
 }
+
+//loads the home page when the page is opened 
 
 function init(){
     load()
